@@ -282,6 +282,8 @@ img {width:100%;}
     }
 	
 	.card {
+	dislpay: flex;
+	padding-top: 5px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -292,10 +294,12 @@ img {width:100%;}
 
 /* Menambahkan margin atas pada gambar */
 .card img {
- width: 300px;
- height: 300px;
-  margin-top: 20px;
+ width: 330px;
+ height: 330px;
+  margin-top: 5px;
   margin-bottom: 0px;
+  margin-left: 1px;
+  margin-right: 1px;
   overflow: hidden;
   object-fit: cover;
   border-radius: 4%;
@@ -308,9 +312,10 @@ font-weight: 700;
 
  .deskripsi {
 color: black;
-margin: 15px;
+margin: 10px;
 font-size: 2.4vh;
-font-weight: 700;
+font-weight: 500;
+font-family: inrenhit;
 }
 .flex-container {
 
@@ -362,6 +367,13 @@ font-weight: 700;
   content: ""; /* Mengosongkan konten default */
 }
 
+.wa-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5px; /* Opsi: Sesuaikan tinggi sesuai kebutuhan */
+}
+
 .button {
   background: linear-gradient(to bottom, #5fad70, #4aba4a, #368f36);
   border-radius: 20px;
@@ -372,6 +384,7 @@ font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
+   border-box: border-size;
   font-size: 16px;
   margin: 19px 2px;
   cursor: pointer;
@@ -386,6 +399,37 @@ font-weight: 700;
   color: white;
   text-decoration: none;
 }
+.alamat h4 {
+margin: 16px;
+font-family: inrenhit;
+color: white;
+margin-bottom: 2px;
+}
+
+p.dotted {border-style: dotted;
+padding: 20px;
+font-size: 1.2em;
+font-family: inrenhit;
+margin-top: 5px;
+margin-left: 10px;
+margin-right: 10px;
+border-radius: 10px;
+background-color: #f5f5f5;
+}
+
+.map-responsive{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-responsive iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
 	  </style>
 	  </head>
 	  
@@ -394,7 +438,7 @@ font-weight: 700;
 	  <div class="topnav">
   <div class="navbar">
   <ul>
-    <li><a href="https://onedayoffi.github.io/beranda/">Home</a></li>
+    <li><a href="https://onedayoffi.github.io/home/">Home</a></li>
     <li><a href="https://www.dulovecakes.site/p/j.html">Price List</a></li>
     <li><a href="https://www.dulovecakes.site/p/form-pemesanan-kue.html">Form Pemesanan</a></li>
     <li><a href="https://wa.me/6281212091330?text=Halo%20Kak%20mau%20tanya"><i class="fa fa-whatsapp"></i> WA Admin</a></li>
@@ -487,10 +531,22 @@ font-weight: 700;
           <p>Kami sarankan kakak untuk booking maximal H-1, jangan mendadak, terkecuali ada stok di toko.</p>
           <p>Setelah itu kami mengirimkan <b><font color="#0094EE">Rekening,</font></b> untuk pembayaran, (Full Payment Lunas) (karena kami mendengar banyak penipuan diluaran sana/ ada akun kena hack, maka untuk nama <b><font color="#0094EE">Rekening,</font></b>  Pastikan atas nama <b><font color="#0094EE">Mahiarsi Dewi</font></b></p>
           <p>Kue kakak siap di <b>Proses</b></p> </br></br>
-		  
+		  <div class="wa-me">
 		  <button class="button"><a href="https://wa.me/6281212091330" target="_blank"><i class="fa fa-whatsapp"></i> Konsultasi ke WA</a></button>
+		  </div>
   </div>
   </div>
+  
+  <div class="alamat">
+  <h4>Alamat Toko</h4>
+<p class="dotted"><strong>Perumahan Permata Wanasari Blok H4 kel Wanasari - Cibitung - Bekasi</strong><br>
+<i>Patokan: dari Kelurahan Wanasari Lapangan Bola sebelah SD Wanasari masuk, paling Belakang ujung perumahan TWI</i>
+</p>
+</div>
+
+<div class="map-responsive">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.55666305906!2d107.09465906954797!3d-6.233825266434459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698f89e6b013df%3A0xf173423d21fdd948!2sOneDay%20Fullfilment!5e0!3m2!1sid!2sid!4v1705141506417!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
   
   
 
