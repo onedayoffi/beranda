@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;800;900&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+:root {
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border: 0;
+}
+html,
+body {
+  width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+}
+body {
+  background-color: #f5f5f4;
+  font-family: 'poppins';
+}
+p {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.container .wrap {
+  flex: 0 1 37.5rem;
+  margin: 0.625rem;
+}
+.container .wrap .box {
+  padding: 2rem 2.5rem 1.5rem 1.5rem;
+  background-color: #fff;
+  border: 0.0625rem solid #607d8b;
+  border-radius: 0.1875rem;
+  font-family: 'DM sans', 'helvetica neue', san-serif;
+  word-spacing: 4px;
+}
+.container .wrap .box:not(:last-child) {
+  margin-bottom: 1.5625rem;
+}
+[data-copy-text] + i.material-icons {
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f5f5f4;
+  padding: 0.3125rem 0.625rem;
+  color: #000;
+  border-color: #607d8b;
+  border-style: solid;
+  border-top-right-radius: 0.1875rem;
+  border-bottom-width: 0.0625rem;
+  border-left-width: 0.0625rem;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 1;
+}
+[data-copy-text] + i.material-icons:hover,
+[data-copy-text] + i.material-icons.active {
+  background-color: #607d8b;
+  opacity: 1;
+  color: #fff;
+}
+</style>
+  <title>Hastag Dulovecakes</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Catamaran:400,100,200,300,500,600,700,800,900|Material+Icons'>
+</head>
+<body>
+
+   <div class="container">
+  <div class="wrap">
+    <div class="box">
+      <p data-copy-text="">Mini bento cake
+Bisa custom design, sesuai keinginan kamu loh😍</br>.</br>.</br>.</br>
+Start from 57 rb
+(include lilin, sendok, box eco friendly, tali rami estetik, paper bag eco friendly)</br>.</br>.</br>.</br>
+Info harga dan lain2?
+Klik link pada bio kami
+WA 081212091330</br>.</br>.</br>.</br>
+jgn lupa follow @dulovecakes</br>
+</p>
+    </div>
+    <div class="box">
+      <p data-copy-text="">#kueultahcikarang #kueultahcibitung #kueultahtambun #kueultahbekasi #bentocake #bentocakecibitung #bentocakecikarang #bentocaketambun #kuecustomcikarang #kuecustomcibitung #kuecustomtambun #tukangkueulangtahun #dulovecakes #ceritakue #kueulangtahuncikarang #kueulangtahuncibitung #kueulangtahuntambun #kueultahgrandwisata #kueultahsetu #kuecustomsetu #tokokuecibitung #customcaketambun #koreancakecibitung #koreancakecikarang #koreancaketamanaster #koreancaketelagaasih #tokokuepuricendana</p>
+    </div>
+  </div>
+</div>
+
+  <script>
+ 'use strict';
+
+document.addEventListener('DOMContentLoaded', function() {
+	copyText.init()
+});
+
+var copyText = {
+	init: function() {
+		if (document.querySelectorAll('[data-copy-text]').length) {
+			var cp = document.querySelectorAll('[data-copy-text]');
+
+			for (var i = 0, l = cp.length; i < l; i++) {
+				copyText.addCopy(cp[i]);
+			}
+		}
+	},
+	addCopy: function(el) {
+		if (typeof el !== 'undifined') {
+			var parent = el.parentNode;
+			if (!parent.querySelectorAll('span.copy-btn').length && window.getSelection) {
+				var cpBtn = document.createElement('I');
+
+				parent.setAttribute('style', 'position:relative');
+				parent.appendChild(cpBtn);
+
+				cpBtn.classList.add('material-icons');
+				cpBtn.textContent = 'content_copy';
+				cpBtn.setAttribute('title', 'Copy Text');
+
+				copyText.addCopyEvent(cpBtn, el);
+			}
+		}
+	},
+	addCopyEvent: function(btn, el) {
+		var coppied = false;
+		var timer = 0;
+
+		function copyText() {
+			function showCheckmark() {
+				btn.textContent = 'check';
+				btn.classList.add('active');
+			}
+
+			function hideCheckmark() {
+				btn.classList.remove('active');
+				btn.textContent = 'content_copy';
+				timer = 0;
+			}
+			
+			if (timer === 0) {
+				if (window.getSelection) {
+					var selection = window.getSelection();
+					var range = document.createRange();
+					range.selectNodeContents(el);
+					selection.removeAllRanges();
+					selection.addRange(range);
+
+					try {
+						document.execCommand('copy');
+						coppied = true;
+					} catch (err) {
+						console.error(err);
+					}
+
+					selection.removeAllRanges();
+				} else {
+					console.error('your browser does not support copy');
+				}
+
+				if (coppied) {
+					clearTimeout(timer);
+					showCheckmark();
+					timer = setTimeout(hideCheckmark, 2000);
+				}
+			}
+		}
+
+		if (typeof btn !== 'undifined' && typeof el !== 'undifined') {
+			btn.addEventListener('click', copyText, false);
+		}
+	},
+}
+  </script>
+</body>
+</html>
