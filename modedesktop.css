@@ -1,0 +1,422 @@
+@media screen and (min-width: 768px) {
+
+    @font-face {
+        font-family: 'Akiona';
+        src: url('https://raw.githubusercontent.com/onedayoffi/beranda/main/font/Akiona.otf') format('opentype');
+      }
+      body {
+        font-family: 'Akiona', 'DM sans', 'helvetica', sans-serif;
+        margin: 0;
+        padding: 0;
+        height: auto; /* Tinggi yang cukup untuk memungkinkan guliran */
+        background-color: white;
+      }
+      
+header {
+    display: flex;
+		  justify-content: space-around;
+		  align-items: center;
+    background-color: #4eba7b;
+    color: #fff;
+    padding: 1em;
+    padding-left: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #d6d6d6;
+    z-index: 2;
+  }
+  header img {
+    width: 180px; /* Mengurangi lebar gambar */
+    display: none;
+    margin: 0px 330px 0px 0px; /* Menambahkan margin-right agar bersebelahan dengan container bar */
+
+  }
+
+  .profile img {
+      float: left;
+      width: 150px;
+      display: block;
+      background: linear-gradient(to right, transparent 60%, rgba(255, 255, 255, 0.8) 80%, rgba(255, 255, 255, 0.5) 100%);
+      background-size: 200% 100%;
+      }
+
+
+      nav-header {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    nav-header a {
+        display: block;
+        margin-right: 20px;
+        font-size: 1em;
+        font-family: 'DM sans', san-serif;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        
+    }
+
+    nav-header a:hover {
+        color: #d4d4d4;
+        text-decoration: none;
+    }
+
+/* -------------------------------------------------------------------------------------------- gambar------------------------------------------------- */
+  .geser {
+      padding-top: 7.5%;
+      padding-left: 10%;
+      padding-right: 10%;
+
+  }    
+  .slider {
+        width: 70%
+        top: 100px;
+        justify-content: center;
+        margin-bottom: -50px;
+        padding-bottom: 0px;
+      }
+  .slider .slick-slide {
+              margin-bottom: 0px;
+          }
+  
+          .slider .slick-slide img {
+              width: 100%;
+              height: 100%;
+               margin-bottom: 0px;
+
+          }
+  
+          /* make button larger and change their positions */
+          .slick-prev, .slick-next {
+              width: 50px;
+              height: 50px;
+              z-index: 1;
+          }
+          .slick-prev {
+              left: 5px;
+          }
+          .slick-next {
+              right: 5px;
+          }
+          .slick-prev:before, 
+          .slick-next:before {
+              font-size: 40px;
+              text-shadow: 0 0 10px rgba(0,0,0,0.5);
+          }
+          
+          /* move dotted nav position */
+          .slick-dots {
+              bottom: 15px;
+          }
+          /* enlarge dots and change their colors */
+          .slick-dots li button:before {
+              font-size: 12px;
+              color: #fff;
+              text-shadow: 0 0 10px rgba(0,0,0,0.5);
+              opacity: 1;
+          }
+          .slick-dots li.slick-active button:before {
+              color: #dedede;
+          }
+  
+          /* hide dots and arrow buttons when slider is not hovered */
+          .slider:not(:hover) .slick-arrow,
+          .slider:not(:hover) .slick-dots {
+              opacity: 0;
+          }
+          /* transition effects for opacity */
+          .slick-arrow,
+          .slick-dots {
+              transition: opacity 0.5s ease-out;
+          }
+          /* end */
+
+/* ------------------------------------------kata-kata-------------------------------------------------------- */
+
+      .container-kata {
+      width: 100%;
+      height: auto;
+      font-family: 'DM sans', 'Helvetica neue', san-serif;
+      margin-bottom: 5%;
+      }
+
+      .item {
+          text-align: center;
+          line-height: 29px;
+          letter-spacing:0px;
+          color: black;
+          margin-top: 0px;
+          Padding: 10px 10% 10px 10%;
+          font-size: 1.5em;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 0.5s;
+      }
+      .item2 {
+          margin-top: 5px;
+          position: absolute;
+          text-align: left;
+          color: black;
+          Padding: 0 60% 10px 18em;
+
+          font-size: 1.1em;
+        transform: translateY(20px);
+        transition: opacity 0.5s, transform 0.5s;
+      }
+
+  .line {
+    display: none;
+    width: 100%;
+    height: 1px; /* Ketebalan garis */
+    background: linear-gradient(to right, transparent, black, transparent); /* Gradient untuk garis horizontal */
+    top: 50%; /* Pusatkan vertikal */
+  }
+
+/* ---------------------------------------------------- CAROUSEL ------------------------------------------------------------ */
+
+  .container-carousel {
+  paadding-top: 0px;
+    width: 100%; /* Lebar penuh */
+    margin-top: -100px; /* Pusatkan container */
+    padding: 20px; /* Padding untuk konten di dalam container */
+    max-width: 350px;
+        margin: 0 auto;
+        height: 85%;
+    background-color: rgb(255, 255, 255); /* Warna latar belakang container */
+    padding-bottom: -100px;
+  }
+
+  .divider {border: 1px solid #ccc;}
+  img {width:100%;}
+
+   .swiper-container {
+   padding: 0px auto;
+   margin: 0px auto;
+   width: 100%;
+   
+  }
+  
+  .swiper-slide {
+  height: 100%;
+  padding: 0;
+   margin: 0;
+    text-align: center;
+
+    background: ;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+  
+      .card {
+        background-color: white;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        font-family: 'DM sans', 'helvetica neue', san-serif;
+        padding: 5px;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(122, 122, 122);
+      }
+
+      /* Menambahkan margin atas pada gambar */
+      .card img {
+       width: 100%;
+       height: 300px;
+       width: 300px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 4%;
+        justify-content: center;
+
+      }
+      .jenis-kue {
+      font-size: 2.5rem;
+      font-weight: 700;
+      }
+
+       .deskripsi {
+      color: black;
+      margin: 25px;
+      font-size: 1.25rem;
+      font-weight: 400;
+      }
+
+      .columns {
+        
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        padding-left: 10%;
+        padding-right: 10%;
+        max-width: 1000px;
+        margin: 10px auto; /* Menambahkan margin atas dan bawah, dan mengatur margin kanan dan kiri */
+    }
+  
+/* ------------------------------------------------------------------------------------------- */
+  
+      .cara-pesan {
+
+        border-box: border size;
+        border-radius: 6px;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: 'DM sans', 'Helvetica Neue', san-serif;
+        width: 100%; /* Lebar penuh */
+        margin: 10px auto; /* Pusatkan container */
+        margin-bottom: 30px;
+        padding: 6px 6px 6px 6px; /* Padding untuk konten di dalam container */
+        background-color: #f0f0f0; /* Warna latar belakang container */
+      }
+        
+        
+      .cara-pesan p {
+        background-color: #f1f1f1;
+        padding 20px;
+        width: auto;
+        margin: 10px;
+        margin-top: 15px;
+        text-align: left;
+        line-height: 20px;
+        font-size: 12px;
+            }
+    
+  .custom-bullets {
+      margin-left: 2px; /* Atur margin kiri untuk memisahkan bullet dari teks */
+      text-align: left;
+      }
+
+      .custom-bullets p {
+        position: relative; /* Membuat posisi relatif untuk paragraf */
+        padding-left: 30px; /* Atur padding kiri untuk membuat ruang di sebelah kiri teks */
+        line-height: 1.5; /* Atur tinggi baris agar bullet dan teks sejajar */
+            text-align: left;
+      }
+
+      .custom-bullets p::before {
+        content: ""; /* Menambahkan konten sebelum paragraf */
+        position: absolute; /* Membuat posisi absolut untuk bullet */
+        top: 5px; /* Atur posisi vertikal bullet */
+        left: 0; /* Atur posisi horizontal bullet */
+        width: 20px; /* Atur lebar bullet */
+        height: 20px; /* Atur tinggi bullet */
+        background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2mod14yOIafXJBmtQN2cLdnBbeU-Q-T2lBA2rxK8p0FYQCebdrxn0NDEiZm2XK-syc7mt015rWjKminQncadfz_x5gWY6nuo7rwNzpoEyDTDOQMtQFcQSnnQw4B0H4l5hALeEAKQ_vlQaUDUGllUi86_T2QnXEgRxSutQx5CA92dGluM8Axl6LOrLqjjn/s320-rw/png-clipart-check-mark-computer-icons-others-angle-text_1_-removebg-preview.png') no-repeat; /* Menambahkan gambar centang sebagai background */
+        background-size: contain; /* Menyesuaikan ukuran gambar agar sesuai dengan kotak bullet */
+        background-position: center; /* Posisi gambar di tengah kotak bullet */
+        content: ""; /* Mengosongkan konten default */
+      }
+      
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+      .wa-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5px; /* Opsi: Sesuaikan tinggi sesuai kebutuhan */
+      }
+
+      .button {
+        background: linear-gradient(to bottom, #5fad70, #4aba4a, #368f36);
+        border-radius: 20px;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         border-box: border-size;
+        font-size: 16px;
+        margin: 19px 2px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      .button:active {
+        transform: scale(0.95); /* Efek zoom ketika tombol ditekan */
+      }
+
+      .button a {
+        color: white;
+        text-decoration: none;
+      }
+      
+/* ------------------------------------------------------------------------------------------------------------------- */
+      
+      .alamat {
+            color: #4d5d8a;
+            font-family: 'DM sans', 'Helvetica Neue', san-serif;
+      }
+
+      .alamat h4 {
+      font-size: 15px;
+      margin: 16px;
+      color: black;
+      margin-bottom: 2px;
+      }
+
+      p.dotted {
+                          /* border-style: dotted; */
+      padding: 20px;
+      color: black;
+      margin-top: 5px;
+      margin-left: 10px;
+      margin-right: 10px;
+      border-radius: 10px;
+      background-color: #f5f5f5;
+      }
+
+
+      .map-responsive{
+      overflow:hidden;
+      padding-bottom:56.25%;
+      position:relative;
+      height:0;
+      }
+      .map-responsive iframe{
+      left:0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+      }
+
+      .search-tag {
+        position: absolute;
+          display: flex;
+          font-size: 5px;
+          color: white;
+          }
+
+      footer p {
+        margin: 0px auto;
+        font-size: 15px;
+        font-family: 'DM Sans', 'poppins', sans-serif;
+        text-align: center;
+        color: black;
+        padding: 20px;
+        padding-bottom: 4em;
+      }
+}
