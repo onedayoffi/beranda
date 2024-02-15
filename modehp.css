@@ -57,7 +57,7 @@ header {
         }
 
 		header img {
-		  width: 180px; /* Mengurangi lebar gambar */
+		  width: 150px; /* Mengurangi lebar gambar */
 		  display: block;
 		  margin: 0px 60px 0px 40px; /* Menambahkan margin-right agar bersebelahan dengan container bar */
 		  transition: width 0.5s ease;
