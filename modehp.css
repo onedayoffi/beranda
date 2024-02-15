@@ -88,10 +88,18 @@ header {
 		}
 
 /* -------------------------------------------------------------------------------------------- gambar------------------------------------------------- */
-		.slider {
-		padding-top: 67px;
+.geser {
+	padding-top: 0px;
+	margin-top: 0px;
+	position:static;
+}		
+
+.slider {
+		
+		margin-top: 50px;
 			margin-bottom: -50px;
 			padding-bottom: 0px;
+			
 		}
  .slider .slick-slide {
                 margin-bottom: 0px;
@@ -359,6 +367,18 @@ header {
 		
 /* ------------------------------------------------------------------------------------------------------------------- */
 		
+		.gambar-terjual {
+			display: block;
+			margin-bottom: 60px;
+			margin-top: 60px;
+		}
+		.gambar-terjual img {
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+
+		}
+
 		.alamat {
 			  color: #4d5d8a;
 			  font-family: 'DM sans', 'Helvetica Neue', san-serif;
