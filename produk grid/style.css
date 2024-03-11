@@ -1,0 +1,97 @@
+/* Mode mobile */
+@media screen and (max-width: 767px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('asset/background-newspaper2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'DM sans', sans-serif;
+  }
+  
+  #produk-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 600px;
+    padding: 10px;
+  }
+}
+
+/* Mode desktop */
+@media screen and (min-width: 768px) {
+  #produk-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 1000px;
+    padding: 10px;
+    justify-items: center !important;
+    margin: 0 auto;
+  }
+}
+
+/* General Styles */
+.product {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.text-container {
+  background: rgb(29, 165, 120);
+  text-align: right;
+  padding: 5px 10px 5px 0px;
+  font-family: 'Helvetica neue', 'helvetica', sans-serif;
+  z-index: 200;
+}
+
+.harga {
+  color: #f5dd08;
+  font-weight: 500;
+  font-size: 1em !important;
+  text-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.Sold {
+  color: #ffffff;
+  font-size: 0.9em !important;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 8px;
+  cursor: pointer;
+}
