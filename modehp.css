@@ -14,7 +14,7 @@
 		
 header {
 	  margin-top: 0 auto;
-	top: 0px;
+	  top: 0px;
       display: flex;
       background-color: #4eba7b;
       color: #fff;
@@ -25,14 +25,16 @@ header {
       position: fixed;
       overflow: hidden;
       border-bottom: 1px solid #d6d6d6;
-      width: 100%;
-	max-width: 700px;
+      max-width: 100%;
+	  width: 100%;
       align-items: center;
       z-index: 1000;
       transition: background-color 0.5s ease;
     }
 
-
+main {
+	max-width: 100%;
+}
 		.profile img {
 			display: none;
 		}
@@ -61,7 +63,7 @@ header {
         }
 
 		header img {
-		  width: 180px; /* Mengurangi lebar gambar */
+		  width: 40vw; /* Mengurangi lebar gambar */
 		  display: block;
 		  margin: 0px 60px 0px 40px; /* Menambahkan margin-right agar bersebelahan dengan container bar */
 		  transition: width 0.5s ease;
@@ -167,6 +169,7 @@ header {
 		.container-kata {
 			margin-top: -5vh;
 			height: 100%;
+			min-height: 30vh;
 			background-image: url('a (15).jpg');
 			background-attachment: fixed;
 			background-size: 120%;
@@ -255,7 +258,14 @@ header {
 	.swiper-button-next, .swiper-button-prev {
 		display: none;
 	  }
-	
+	  .swiper-pagination {
+		content: '';
+		display: none;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px; /* Sesuaikan jarak antara pagination dengan swiper */
+	  }
+	  
 		.card {
 		  background-color: white;
 		  border-radius: 10px;
@@ -430,7 +440,7 @@ header {
 		  font-size: 10px;
 		  font-family: 'DM Sans', 'poppins', sans-serif;
 		  text-align: center;
-		  color: rgb(255, 255, 255);
+		  color: black;
 		  padding: 20px;
 		  padding-bottom: 10em;
 		}
