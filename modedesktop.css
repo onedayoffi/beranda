@@ -143,7 +143,7 @@ header img {
     margin-bottom: 5%;
     }
 
-    .item {
+    .container-kata h2 {
         text-align: center;
         line-height: 29px;
         letter-spacing:0px;
@@ -154,7 +154,7 @@ header img {
       transform: translateY(20px);
       transition: opacity 0.5s, transform 0.5s;
     }
-    .item2 {
+    .container-kata h3 {
         margin-top: 5px;
         position: absolute;
         text-align: left;
@@ -250,12 +250,12 @@ padding: 0;
       justify-content: center;
 
     }
-    .jenis-kue {
+    .card h2 {
     font-size: 2.5rem;
     font-weight: 700;
     }
 
-     .deskripsi {
+     .card h3 {
     color: black;
     margin: 25px;
     font-size: 1.25rem;
@@ -292,7 +292,7 @@ padding: 0;
     }
       
       
-    .cara-pesan p {
+    .cara-pesan h2 {
       background-color: #f1f1f1;
       padding 20px;
       width: auto;
@@ -422,8 +422,8 @@ padding: 0;
     .search-tag {
       position: absolute;
         display: flex;
-        font-size: 5px;
-        color: white;
+        font-size: 0.001rem;
+        color: #4eba7b;
         }
 
     footer p {
@@ -431,8 +431,12 @@ padding: 0;
       font-size: 15px;
       font-family: 'DM Sans', 'poppins', sans-serif;
       text-align: center;
-      color: black;
+      color: rgb(255, 255, 255);
       padding: 20px;
       padding-bottom: 4em;
     }
+
+    footer {
+			background-color: #4eba7b;
+		}
 }
