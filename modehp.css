@@ -18,6 +18,8 @@ header {
       background-color: #4eba7b;
       color: #fff;
       padding: 2em;
+	  padding-top: 0.8rem;
+	  padding-bottom: 0.8rem;
       text-align: center;
       position: fixed;
       overflow: hidden;
@@ -57,7 +59,7 @@ header {
         }
 
 		header img {
-		  width: 150px; /* Mengurangi lebar gambar */
+		  width: 180px; /* Mengurangi lebar gambar */
 		  display: block;
 		  margin: 0px 60px 0px 40px; /* Menambahkan margin-right agar bersebelahan dengan container bar */
 		  transition: width 0.5s ease;
@@ -75,6 +77,7 @@ header {
 		  background-color: white;
 		  margin: 5px 0;
 		  transition: 0.4s;
+		  cursor: pointer;
 		}
 
 		.change .bar1 {
@@ -90,13 +93,13 @@ header {
 /* -------------------------------------------------------------------------------------------- gambar------------------------------------------------- */
 .geser {
 	padding-top: 0px;
-	margin-top: 0px;
-	position:static;
+	margin-top: 6.5rem;
+	position:relative;
 }		
 
 .slider {
 		
-		margin-top: 50px;
+		margin-top: 60px;
 			margin-bottom: -50px;
 			padding-bottom: 0px;
 			
@@ -160,9 +163,24 @@ header {
 /* ------------------------------------------kata-kata-------------------------------------------------------- */
 
 		.container-kata {
+			top: -15px;
+			height: 100%;
+			background-image: url('a\ \(15\).jpg');
+			background-attachment: fixed;
+			background-size: 120%;
 		width: 100%;
 		height: auto;
 		font-family: 'DM sans', 'Helvetica neue', san-serif;
+		padding-bottom: 15px;
+		}
+
+		.background-overlay {
+			position: absolute;
+			top: 300px;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, 0.8); /* Opacity 50% dengan rgba */
 		}
 
 		.item {
@@ -195,7 +213,7 @@ header {
 /* ---------------------------------------------------- CAROUSEL ------------------------------------------------------------ */
 
 	.container-carousel {
-	paadding-top: 0px;
+	padding-top: 0px;
 	  width: 100%; /* Lebar penuh */
 	  margin-top: -100px; /* Pusatkan container */
 	  padding: 20px; /* Padding untuk konten di dalam container */
@@ -343,7 +361,7 @@ header {
 		  background: linear-gradient(to bottom, #5fad70, #4aba4a, #368f36);
 		  border-radius: 20px;
 		  color: white;
-		  padding: 15px 32px;
+		  padding: 8px 25px;
 		  text-align: center;
 		  text-decoration: none;
 		  display: flex;
@@ -367,18 +385,6 @@ header {
 		
 /* ------------------------------------------------------------------------------------------------------------------- */
 		
-		.gambar-terjual {
-			display: block;
-			margin-bottom: 60px;
-			margin-top: 60px;
-		}
-		.gambar-terjual img {
-			display: block;
-			width: 100%;
-			margin-bottom: 20px;
-
-		}
-
 		.alamat {
 			  color: #4d5d8a;
 			  font-family: 'DM sans', 'Helvetica Neue', san-serif;
