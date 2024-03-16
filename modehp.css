@@ -1,450 +1,894 @@
 @media screen and (max-width: 767px) {
 
+
+::root: {
+
+  BG: #3cba8e;
+
+}
 @font-face {
+
 		  font-family: 'Akiona';
+
 		  src: url('https://raw.githubusercontent.com/onedayoffi/beranda/main/font/Akiona.otf') format('opentype');
+
 		}
+
 		body {
+
 		  font-family: 'Akiona', 'DM sans', 'helvetica', sans-serif;
+
 		  margin: 0;
+
 		  padding: 0;
+
 		  height: auto; /* Tinggi yang cukup untuk memungkinkan guliran */
+
 		  background-color: white;
+
 		}
+
 		
+
 header {
+
 	  margin-top: 0 auto;
+
 	  top: 0px;
+
       display: flex;
-      background-color: #4eba7b;
+
+      background-color: #3cba8e;
+
       color: #fff;
+
       padding: 2em;
+
 	  padding-top: 0.8rem;
+
 	  padding-bottom: 0.8rem;
+
       text-align: center;
+
       position: fixed;
+
       overflow: hidden;
+
       border-bottom: 1px solid #d6d6d6;
+
       max-width: 100%;
+
 	  width: 100%;
+
       align-items: center;
+
       z-index: 1000;
+
       transition: background-color 0.5s ease;
+
     }
 
+
+
 main {
+
 	max-width: 100%;
+
 }
+
 		.profile img {
+
 			display: none;
+
 		}
+
 		
+
 		#menu {
+
             position: fixed;
-            top: 6em;
+
+            top: 10vh;
+
             left: -110%;
+
             width: 100%;
+
             height: auto;
-            background-color: #4eba7b;
+
+            background-color: #3cba8e;
             padding: 20px;
 
+
+
             z-index: 1;
+
             transition: left 0.3s ease-in-out;
+
         }
+
+
 
         #menu a {
+
 			font-family: 'DM sans', sans-serif;
+
             display: block;
+
 			text-align: left;
+
             color: white;
+
             text-decoration: none;
-            font-size: 1.8em;
+
+            font-size: 1rem;
+
             margin-bottom: 20px;
+
         }
 
+
+
 		header img {
+
 		  width: 40vw; /* Mengurangi lebar gambar */
-		  display: block;
-		  margin: 0px 60px 0px 40px; /* Menambahkan margin-right agar bersebelahan dengan container bar */
+		  margin-right: 1%;
+		  margin-left: 20%;
+		  float: right; /* Menambahkan margin-right agar bersebelahan dengan container bar */
+
 		  transition: width 0.5s ease;
+
 		}
+
+
 
 		.garis {
+
 		  display: inline-block;
+
 		  cursor: pointer;
+
 		  margin: 5px;
+
 		}
+
+
 
 		.bar1, .bar2, .bar3 {
+
 		  width: 20px;
+
 		  height: 2px;
+
 		  background-color: white;
+
 		  margin: 5px 0;
+
 		  transition: 0.4s;
+
 		  cursor: pointer;
+
 		}
 
+
+
 		.change .bar1 {
+
 		  transform: translate(0, 7px) rotate(-45deg);
+
 		}
+
+
 
 		.change .bar2 {opacity: 0;}
 
+
+
 		.change .bar3 {
+
 		  transform: translate(0, -7px) rotate(45deg);
+
 		}
+
+
 
 /* -------------------------------------------------------------------------------------------- gambar------------------------------------------------- */
+
 .geser {
+
 	padding-top: 0px;
+
 	margin-top: 6.5rem;
+
 	position:relative;
+
 }		
 
+
+
 .slider {
+
 		
+
 		margin-top: 9.5vh;
+
 			margin-bottom: 0;
+
 			padding-bottom: 0px;
+
 			
+
 		}
+
  .slider .slick-slide {
+
                 margin-bottom: 0px;
-            }
-    
-            .slider .slick-slide img {
-                width: 100%;
-                height: 100%;
-				 margin-bottom: 0px;
 
             }
+
     
+
+            .slider .slick-slide img {
+
+                width: 100%;
+
+                height: 100%;
+
+				 margin-bottom: 0px;
+
+
+
+            }
+
+    
+
             /* make button larger and change their positions */
+
             .slick-prev, .slick-next {
+
                 width: 50px;
+
                 height: 50px;
+
                 z-index: 1;
+
             }
+
             .slick-prev {
+
                 left: 5px;
+
             }
+
             .slick-next {
+
                 right: 5px;
+
             }
+
             .slick-prev:before, 
+
             .slick-next:before {
+
                 font-size: 40px;
+
                 text-shadow: 0 0 10px rgba(0,0,0,0.5);
+
             }
+
             
+
             /* move dotted nav position */
+
             .slick-dots {
+
                 bottom: 0;
+
             }
+
             /* enlarge dots and change their colors */
+
             .slick-dots li button:before {
+
                 font-size: 12px;
+
                 color: #fff;
+
                 text-shadow: 0 0 10px rgba(0,0,0,0.5);
+
                 opacity: 1;
+
             }
+
             .slick-dots li.slick-active button:before {
+
                 color: #dedede;
+
             }
+
     
+
             /* hide dots and arrow buttons when slider is not hovered */
+
             .slider:not(:hover) .slick-arrow,
+
             .slider:not(:hover) .slick-dots {
+
                 opacity: 0;
+
             }
+
             /* transition effects for opacity */
+
             .slick-arrow,
+
             .slick-dots {
+
                 transition: opacity 0.5s ease-out;
+
             }
+
             /* end */
+
+
 
 /* ------------------------------------------kata-kata-------------------------------------------------------- */
 
+
+
 		.container-kata {
+
 			margin-top: -5vh;
+
+		  justify-content:center;
+		  align-items: center;
 			height: 100%;
-			min-height: 30vh;
+
+			min-height: 65vh;
+
 			background-image: url('a (15).jpg');
+
 			background-attachment: fixed;
+
 			background-size: 120%;
+
 		width: 100%;
+
 		height: auto;
+
 		font-family: 'DM sans', 'Helvetica neue', san-serif;
-		padding-bottom: 6%;
-		padding-top: 6%;
+
+		padding-bottom: 4%;
+
+		padding-top: 15%;
+
 		}
+
+
 
 		.container-kata h2 {
-			text-align: left;
+
+			text-align: center;
+
 			line-height: 29px;
+
 			letter-spacing:0px;
+
 			color: black;
+
 			margin-top: 0px;
+
 			Padding: 10px 40px 10px 40px;
+
 			font-size: 1.5rem;
+
 			font-family: 'DM sans', 'Helvetica neue', san-serif;
+
 		  transform: translateY(20px);
+
 		  transition: opacity 0.5s, transform 0.5s;
-		}
-		.container-kata h3 {
-			text-align: left;
-			color: black;
-			Padding: 10px 40px 10px 40px;
-			font-size: 1.5rem;
-			font-family: 'DM sans', 'Helvetica neue', san-serif;
-		  transform: translateY(20px);
-		  transition: opacity 0.5s, transform 0.5s;
+
 		}
 
+		.container-kata h3 {
+
+			text-align: center;
+
+			color: black;
+
+			Padding: 10px 40px 10px 40px;
+
+			font-size: 1.5rem;
+
+			font-family: 'DM sans', 'Helvetica neue', san-serif;
+
+		  transform: translateY(20px);
+
+		  transition: opacity 0.5s, transform 0.5s;
+
+		}
+
+
+
 	.line {
+
       width: 100%;
+
       height: 1px; /* Ketebalan garis */
+
       background: linear-gradient(to right, transparent, black, transparent); /* Gradient untuk garis horizontal */
+
       top: 50%; /* Pusatkan vertikal */
+
     }
+
+
 
 /* ---------------------------------------------------- CAROUSEL ------------------------------------------------------------ */
 
+
+
 	.container-carousel {
+
 	padding-top: 0px;
+
 	  width: 100%; /* Lebar penuh */
+
 	  margin-top: -100px; /* Pusatkan container */
+
 	  padding: 20px; /* Padding untuk konten di dalam container */
+
 	  max-width: 1280px;
+
 		  margin: 0 auto;
+
 		  height: 100%;
+
 	  background-color: WHITE; /* Warna latar belakang container */
+
 	  padding-bottom: -100px;
+
 	}
 
+
+
 	.divider {border: 1px solid #ccc;}
+
 	img {width:100%;}
 
+
+
      .swiper-container {
+
 	 padding: 0px auto;
+
 	 margin: 0px auto;
+
      width: 100%;
+
 	 
+
     }
+
 	
+
     .swiper-slide {
+
 	height: 100%;
+
 	padding: 0;
+
 	 margin: 0;
+
       text-align: center;
+
       font-size: 18px;
+
       background: ;
+
       /* Center slide text vertically */
+
       display: -webkit-box;
+
       display: -ms-flexbox;
+
       display: -webkit-flex;
+
       display: flex;
+
       -webkit-box-pack: center;
+
       -ms-flex-pack: center;
+
       -webkit-justify-content: center;
+
       justify-content: center;
+
       -webkit-box-align: center;
+
       -ms-flex-align: center;
+
       -webkit-align-items: center;
+
       align-items: center;
+
     }
+
+
 
 	.swiper-button-next, .swiper-button-prev {
+
 		display: none;
+
 	  }
+
 	  .swiper-pagination {
+
 		content: '';
+
 		display: none;
+
 		justify-content: center;
+
 		align-items: center;
+
 		margin-top: 20px; /* Sesuaikan jarak antara pagination dengan swiper */
+
 	  }
+
 	  
+
 		.card {
+
 		  background-color: white;
+
 		  border-radius: 10px;
+
 		  max-width: 900px;
+
 		  width: 100%;
+
 		  margin: auto;
+
 		  text-align: center;
+
 		  font-family: 'DM sans', 'helvetica neue', san-serif;
+
 		  padding: 25px;
+
 		}
+
+
 
 		/* Menambahkan margin atas pada gambar */
+
 		.card img {
+
 		 width: 100%;
+
 		 height: 300px;
+
 		  margin-top: 20px;
+
 		  margin-bottom: 0px;
+
 		  overflow: hidden;
+
 		  object-fit: cover;
+
 		  border-radius: 4%;
 
+
+
 		}
+
 		.card h2 {
+
 		font-size: 2.1rem;
+
 		font-weight: 700;
+
 		}
+
+
 
 		 .card h3 {
+
 		color: black;
+
 		margin: 25px;
+
 		font-size: 1.2rem;
+
 		font-weight: 400;
+
 		}
+
 	
+
  /* ------------------------------------------------------------------------------------------- */
+
 	
+
 		.cara-pesan {
 
+
+
 		  border-box: border size;
+
 		  border-radius: 6px;
+
 		  align-items: center;
+
 		  justify-content: center;
+
 		  font-size: 12px;
+
 		  font-family: 'DM sans', 'Helvetica Neue', san-serif;
+
 		  width: 96%; /* Lebar penuh */
+
 		  margin: 10px auto; /* Pusatkan container */
+
 		  margin-bottom: 30px;
+
 		  padding: 6px 6px 6px 6px; /* Padding untuk konten di dalam container */
+
 		  background-color: #f0f0f0; /* Warna latar belakang container */
+
 		}
+
           
+
 		  
+
 		.cara-pesan h2 {
+
 		  background-color: #f1f1f1;
+
 		  padding 20px;
+
 		  width: auto;
+
 		  margin: 10px;
+
 		  margin-top: 15px;
+
 		  text-align: left;
+
 		  line-height: 20px;
+
 		  font-size: 12px;
+
 			  }
+
       
+
     .custom-bullets {
+
 		margin-left: 2px; /* Atur margin kiri untuk memisahkan bullet dari teks */
+
         text-align: left;
+
 		}
+
+
 
 		.custom-bullets p {
+
 		  position: relative; /* Membuat posisi relatif untuk paragraf */
+
 		  padding-left: 30px; /* Atur padding kiri untuk membuat ruang di sebelah kiri teks */
+
 		  line-height: 1.5; /* Atur tinggi baris agar bullet dan teks sejajar */
+
 			  text-align: left;
+
 		}
+
+
 
 		.custom-bullets p::before {
+
 		  content: ""; /* Menambahkan konten sebelum paragraf */
+
 		  position: absolute; /* Membuat posisi absolut untuk bullet */
+
 		  top: 5px; /* Atur posisi vertikal bullet */
+
 		  left: 0; /* Atur posisi horizontal bullet */
+
 		  width: 20px; /* Atur lebar bullet */
+
 		  height: 20px; /* Atur tinggi bullet */
+
 		  background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2mod14yOIafXJBmtQN2cLdnBbeU-Q-T2lBA2rxK8p0FYQCebdrxn0NDEiZm2XK-syc7mt015rWjKminQncadfz_x5gWY6nuo7rwNzpoEyDTDOQMtQFcQSnnQw4B0H4l5hALeEAKQ_vlQaUDUGllUi86_T2QnXEgRxSutQx5CA92dGluM8Axl6LOrLqjjn/s320-rw/png-clipart-check-mark-computer-icons-others-angle-text_1_-removebg-preview.png') no-repeat; /* Menambahkan gambar centang sebagai background */
+
 		  background-size: contain; /* Menyesuaikan ukuran gambar agar sesuai dengan kotak bullet */
+
 		  background-position: center; /* Posisi gambar di tengah kotak bullet */
+
 		  content: ""; /* Mengosongkan konten default */
+
 		}
+
 		
+
 /* ------------------------------------------------------------------------------------------------------------------- */
+
+
 
 		.wa-me {
+
 		  display: flex;
+
 		  justify-content: center;
+
 		  align-items: center;
+
 		  height: 5px; /* Opsi: Sesuaikan tinggi sesuai kebutuhan */
+
 		}
+
+
 
 		.button {
-		  background: linear-gradient(to bottom, #5fad70, #4aba4a, #368f36);
+
+		  background: linear-gradient(to bottom, #25a179, #3cba8e, #25a179);
+
 		  border-radius: 20px;
+
 		  color: white;
+
 		  padding: 8px 25px;
+
 		  text-align: center;
+
 		  text-decoration: none;
+
 		  display: flex;
+
 		  justify-content: center;
+
 		  align-items: center;
+
 		   border-box: border-size;
-		  font-size: 16px;
+
+		  font-size: 1rem;
+
 		  margin: 19px 2px;
+
 		  cursor: pointer;
+
+		  border: solid 0px !important;
 		  transition: transform 0.3s;
+
 		}
+
+
 
 		.button:active {
+
 		  transform: scale(0.95); /* Efek zoom ketika tombol ditekan */
+
 		}
+
+
 
 		.button a {
+
 		  color: white;
+
 		  text-decoration: none;
+
 		}
+
 		
+
 /* ------------------------------------------------------------------------------------------------------------------- */
+
 		
+
 		.alamat {
+
 			  color: #4d5d8a;
+
 			  font-family: 'DM sans', 'Helvetica Neue', san-serif;
+
 		}
+
+
 
 		.alamat h4 {
+
 		font-size: 10px;
+
 		margin: 16px;
+
 		color: black;
+
 		margin-bottom: 2px;
+
 		}
 
+
+
 		p.dotted {
+
 							/* border-style: dotted; */
+
 		padding: 20px;
+
 		color: black;
+
 		margin-top: 5px;
+
 		margin-left: 10px;
+
 		margin-right: 10px;
+
 		border-radius: 10px;
+
 		background-color: #f5f5f5;
+
 		}
+
+
+
 
 
 		.map-responsive{
+
 		overflow:hidden;
+
 		padding-bottom:56.25%;
+
 		position:relative;
+
 		height:0;
+
 		}
+
 		.map-responsive iframe{
+
 		left:0;
+
 		top:0;
+
 		height:100%;
+
 		width:100%;
+
 		position:absolute;
+
 		}
 
-		.search-tag {
-			display: flex;
-            font-size: 0.001rem;
-            color: white;
-			}
 
+
+		
 		footer p {
+
 		  margin: 0px auto;
+
 		  font-size: 10px;
+
 		  font-family: 'DM Sans', 'poppins', sans-serif;
+
 		  text-align: center;
-		  color: black;
+
+		  color: white;
+
 		  padding: 20px;
+
 		  padding-bottom: 10em;
+
 		}
+
 		footer {
-			background-color: #4eba7b;
+
+			background-color: #25a179;
+
 		}
+
 	}
+
