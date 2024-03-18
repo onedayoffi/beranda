@@ -337,7 +337,7 @@ main {
 
 
 		.container-kata {
-
+display: none;
 			margin-top: -5vh;
 
 		  justify-content:center;
@@ -410,18 +410,9 @@ main {
 
 
 
-	.line {
-
-      width: 100%;
-
-      height: 1px; /* Ketebalan garis */
-
-      background: linear-gradient(to right, transparent, black, transparent); /* Gradient untuk garis horizontal */
-
-      top: 50%; /* Pusatkan vertikal */
-
-    }
-
+	.custom img {
+    margin-top: -5vh;
+  }
 
 
 /* ---------------------------------------------------- CAROUSEL ------------------------------------------------------------ */
