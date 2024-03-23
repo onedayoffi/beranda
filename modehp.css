@@ -71,7 +71,7 @@ header {
 
 
 main {
-
+	margin-top: 7.2rem;
 	max-width: 100%;
 
 }
@@ -194,143 +194,6 @@ main {
 
 /* -------------------------------------------------------------------------------------------- gambar------------------------------------------------- */
 
-.geser {
-
-	padding-top: 0px;
-
-	margin-top: 6.5rem;
-
-	position:relative;
-
-}		
-
-
-
-.slider {
-
-		
-
-		margin-top: 9.5vh;
-
-			margin-bottom: 0;
-
-			padding-bottom: 0px;
-
-			
-
-		}
-
- .slider .slick-slide {
-
-                margin-bottom: 0px;
-
-            }
-
-    
-
-            .slider .slick-slide img {
-
-                width: 100%;
-
-                height: 100%;
-
-				 margin-bottom: 0px;
-
-
-
-            }
-
-    
-
-            /* make button larger and change their positions */
-
-            .slick-prev, .slick-next {
-
-                width: 50px;
-
-                height: 50px;
-
-                z-index: 1;
-
-            }
-
-            .slick-prev {
-
-                left: 5px;
-
-            }
-
-            .slick-next {
-
-                right: 5px;
-
-            }
-
-            .slick-prev:before, 
-
-            .slick-next:before {
-
-                font-size: 40px;
-
-                text-shadow: 0 0 10px rgba(0,0,0,0.5);
-
-            }
-
-            
-
-            /* move dotted nav position */
-
-            .slick-dots {
-
-                bottom: 0;
-
-            }
-
-            /* enlarge dots and change their colors */
-
-            .slick-dots li button:before {
-
-                font-size: 12px;
-
-                color: #fff;
-
-                text-shadow: 0 0 10px rgba(0,0,0,0.5);
-
-                opacity: 1;
-
-            }
-
-            .slick-dots li.slick-active button:before {
-
-                color: #dedede;
-
-            }
-
-    
-
-            /* hide dots and arrow buttons when slider is not hovered */
-
-            .slider:not(:hover) .slick-arrow,
-
-            .slider:not(:hover) .slick-dots {
-
-                opacity: 0;
-
-            }
-
-            /* transition effects for opacity */
-
-            .slick-arrow,
-
-            .slick-dots {
-
-                transition: opacity 0.5s ease-out;
-
-            }
-
-            /* end */
-
-
 
 /* ------------------------------------------kata-kata-------------------------------------------------------- */
 
@@ -378,6 +241,7 @@ display: none;
 
 			margin-top: 0px;
 
+		
 			Padding: 10px 40px 10px 40px;
 
 			font-size: 1.5rem;
@@ -414,190 +278,9 @@ display: none;
     margin-top: -5vh;
   }
 
-
-/* ---------------------------------------------------- CAROUSEL ------------------------------------------------------------ */
-
-
-
-	.container-carousel {
-
-	padding-top: 0px;
-
-	  width: 100%; /* Lebar penuh */
-
-	  margin-top: -100px; /* Pusatkan container */
-
-	  padding: 20px; /* Padding untuk konten di dalam container */
-
-	  max-width: 1280px;
-
-		  margin: 0 auto;
-
-		  height: 100%;
-
-	  background-color: WHITE; /* Warna latar belakang container */
-
-	  padding-bottom: -100px;
-
-	}
-
-
-
-	.divider {border: 1px solid #ccc;}
-
-	img {width:100%;}
-
-
-
-     .swiper-container {
-
-	 padding: 0px auto;
-
-	 margin: 0px auto;
-
-     width: 100%;
-
-	 
-
-    }
-
-	
-
-    .swiper-slide {
-
-	height: 100%;
-
-	padding: 0;
-
-	 margin: 0;
-
-      text-align: center;
-
-      font-size: 18px;
-
-      background: ;
-
-      /* Center slide text vertically */
-
-      display: -webkit-box;
-
-      display: -ms-flexbox;
-
-      display: -webkit-flex;
-
-      display: flex;
-
-      -webkit-box-pack: center;
-
-      -ms-flex-pack: center;
-
-      -webkit-justify-content: center;
-
-      justify-content: center;
-
-      -webkit-box-align: center;
-
-      -ms-flex-align: center;
-
-      -webkit-align-items: center;
-
-      align-items: center;
-
-    }
-
-
-
-	.swiper-button-next, .swiper-button-prev {
-
-		display: none;
-
-	  }
-
-	  .swiper-pagination {
-
-		content: '';
-
-		display: none;
-
-		justify-content: center;
-
-		align-items: center;
-
-		margin-top: 20px; /* Sesuaikan jarak antara pagination dengan swiper */
-
-	  }
-
-	  
-
-		.card {
-
-		  background-color: white;
-
-		  border-radius: 10px;
-
-		  max-width: 900px;
-
-		  width: 100%;
-
-		  margin: auto;
-
-		  text-align: center;
-
-		  font-family: 'DM sans', 'helvetica neue', san-serif;
-
-		  padding: 25px;
-
-		}
-
-
-
-		/* Menambahkan margin atas pada gambar */
-
-		.card img {
-
-		 width: 100%;
-
-		 height: 300px;
-
-		  margin-top: 20px;
-
-		  margin-bottom: 0px;
-
-		  overflow: hidden;
-
-		  object-fit: cover;
-
-		  border-radius: 4%;
-
-
-
-		}
-
-		.card h2 {
-
-		font-size: 2.1rem;
-
-		font-weight: 700;
-
-		}
-
-
-
-		 .card h3 {
-
-		color: black;
-
-		margin: 25px;
-
-		font-size: 1.2rem;
-
-		font-weight: 400;
-
-		}
-
-	
-
- /* ------------------------------------------------------------------------------------------- */
+  .custom .price {
+	margin-top:1rem;
+  }
 
 	
 
@@ -778,7 +461,20 @@ display: none;
 
 /* ------------------------------------------------------------------------------------------------------------------- */
 
-		
+.columns {
+      
+	display: flex;
+flex-direction: column; /* Mengatur tata letak menjadi atas dan bawah */
+justify-content: space-between;
+/* Menghapus penggunaan grid-template-columns */
+gap: 0px;
+padding-left: 10%;
+padding-right: 10%;
+max-width: 1000px;
+margin: 10px auto;
+
+	
+}
 
 		.alamat {
 
